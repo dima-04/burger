@@ -1,0 +1,36 @@
+li {
+  text-align: center;
+    padding: 5px;
+    margin: 5px;
+    background: rgb(129, 176, 245);
+ 
+   
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  body{
+ 
+      background-color: rgb(109, 252, 240);
+  }
+  .list-group{
+    text-align: center;
+    margin-left: 40%;
+  }
+  .image{
+    width: 200px;
+
+  }
+  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ h1{
+   text-align: center;
+ }
+ .create-form{
+   text-align: center;
+ }
