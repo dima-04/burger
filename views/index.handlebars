@@ -6,29 +6,25 @@
 
   <div class="row">
     <div class=" col-6 mx-auto">
-        {{#each burgers}}
-        {{#if devoured}}
-        {{> burgers/burger-block devoured=true}}
-        {{/if}}
-        {{/each}}
+      {{#each burgers}}
+      {{#unless devoured}}
+      {{> burgers/burger-block devoured=false}}
+      {{/unless}}
+      {{/each}}
       </ul>
     </div>
     <div class=" col-6 mx-auto">
-      <ul>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          Cras justo odio</li>
-
-        <li class="list-group-item d-flex justify-content-between align-items-center ">
-          Dapibus ac facilisis in</li>
-
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          Morbi leo risus </li>
+      {{#each burgers}}
+      {{#if devoured}}
+      {{> burgers/burger-block devoured=true}}
+      {{/if}}
+      {{/each}}
       </ul>
     </div>
   </div>
 </div>
 <div class="row">
-  <div class=" col-6 mx-auto create-form">
+  <div class=" col-6 mx-auto create-form mt-5">
 
     <h2>Add a Burger</h2>
     <form class="create-form ">
